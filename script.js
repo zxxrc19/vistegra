@@ -68,8 +68,6 @@ calculateBtn.addEventListener('click', function () {
   const selectedPipePrice = data.find(pipe => pipe.width === selectedPipe).price;
 
   const width = parseInt(widthInput.value);
-  console.log(width);
-  console.log(typeof width);
   const length = parseInt(lengthInput.value);
   const strength = strengthSelect.value;
   if (isNaN(width) || isNaN(length)) {
@@ -124,6 +122,5 @@ calculateBtn.addEventListener('click', function () {
       </tbody>
   </table>
   `;
-  // Отображаем результат
   resultSection.innerHTML = resultText;
 });
