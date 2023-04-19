@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Калькулятор проектов</title>
+
+  <!-- Подключение стилей -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="input-section">
+
+      <div class="row">
+        <label for="material">Материал:</label>
+        <select id="material"></select>
+      </div>
+
+      <div class="row">
+        <label for="pipe">Труба:</label>
+        <select id="pipe"></select>
+      </div>
+
+      <div class="row">
+        <label for="width">Ширина:</label>
+        <input required type="number" id="width">
+      </div>
+
+      <div class="row">
+        <label for="length">Длина:</label>
+        <input required type="number" id="length">
+      </div>
+
+      <div class="row">
+        <label for="strength">Прочность:</label>
+        <select id="strength"></select>
+      </div>
+
+      <button id="calculate-btn">Рассчитать</button>
+    </div>
+
+    <div class="result-section"></div>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>
